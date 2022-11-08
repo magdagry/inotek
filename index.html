@@ -207,8 +207,9 @@
         </div>
     </div>
 
-    <div class="blok">
+  
         <a name="kontakt">
+            <div class="blok">
             <h3>Kontakt</h3>
         </a>
         <h5>Wybierz najwygodniejszą dla siebie formę kontaktu!</h5>
@@ -227,16 +228,21 @@
                     <div class="modal-content mpolozenie">
 
                         <!-- Modal Header -->
-                        <div class="modal-header">
+                        <div class="modal-header cglowa">
                             <h4 class="modal-title">Zapraszamy do rozmowy!</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
 
                         <!-- Modal body -->
                         <div class="modal-body">
+                            
+                            <div class="container mt-3">
+                                <div class="spinner-border text-primary"></div>
+                            </div>
+                            <p class="laczenie">łączymy Cię z konsultantem</p>
 
                             <form action="/action_page.php">
-                                <div class="mb-3 mt-3">
+                                <div class="mb-3 mt-3 bloczek">
                                     <label for="comment"></label>
                                     <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                                 </div>
@@ -245,7 +251,7 @@
                         </div>
 
                         <!-- Modal footer -->
-                        <div class="modal-footer">
+                        <div class="modal-footer cfooter">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Wyślij
                                 wiadomość</button>
                         </div>
@@ -255,13 +261,50 @@
             </div>
 
 
-
-
-
-            <button type="button" class="btn btn-outline-secondary kontakty">
+            <button type="button" class="btn btn-outline-secondary kontakty" data-bs-toggle="modal"
+                data-bs-target="#mess">
                 <h5>MESSENGER</h5>
                 <p>Skontaktuj się przez Messenger</p>
             </button>
+
+
+            <!-- The Modal -->
+            <div class="modal" id="mess">
+                <div class="modal-dialog">
+                    <div class="modal-content mpolozenie">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header glowa">
+                            <img src="img/messenger_icon.png" class="position-absolute omess">
+                            <h4 class="modal-title messe">Messenger</h4><br>
+                            <h6>zaloguj się do serwisu Facebook, aby<br>
+                                rozpocząć rozmowę</h6>
+                            <button type="button" class="btn-close krzyzyk" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body m-form">
+
+                            <div class="container mt-3">
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Adres email lub numer telefonu" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" id="pwd" placeholder="Hasło"
+                                            name="pswd">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary zaloguj">Zaloguj się</button>
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
 
             <a href="#" class="btn btn btn-outline-secondary kontakty">
                 <h5>FORMULARZ KONTAKTOWY</h5>

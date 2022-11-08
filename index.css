@@ -43,7 +43,6 @@ h1 {
     height: 200px;
     position: relative;
     margin: 0px 250px;
-    top: -30px;
 }
 
 h3 {
@@ -188,3 +187,61 @@ color: black;
 .tel {
     font-weight: bolder;
 }
+.zaloguj {
+    width: 100%;
+}
+.messe {
+    font-family:-apple-system, sans-serif!important;
+    position: absolute;
+    left: 30%!important;
+    top: 90px;}
+.cglowa {
+    --bs-modal-header-border-color: white;
+}   
+.cfooter {
+ border-top: white;
+}
+.bloczek {
+    margin-top: -40px!important;
+}
+.laczenie {
+    font-family: Corsiva Hebrew;
+position: relative;
+display: inline;
+right: -45px;
+top: -27px;
+}
+
+.spinner-border {
+--bs-spinner-border-width: 2px;
+--bs-spinner-width: 20px;
+--bs-spinner-height: 20px;
+--bs-spinner-animation-speed: 0,2s;
+}
+
+ h6 {
+    font-family: Al Tarikh;
+color: rgb(92, 85, 85);
+position: absolute;
+top: 138px;
+text-align: -webkit-center;
+ }
+ .m-form {
+    bottom: 20px!important;
+ }
+.glowa {
+    height: 200px!important;
+}
+.omess {
+    height: 60px;
+    width: 60px;
+    top: 20px!important;
+    right: 40%;
+    --bs-modal-header-border-color: white;
+}
+.krzyzyk {
+    position: absolute;
+    top: 20px!important;
+right: 15px!important;
+}
+
