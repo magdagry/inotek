@@ -141,7 +141,6 @@
             </div>
         </div>
     </div>
-    <br> <br>
     <div class="onas">
         <div class="blok">
 
@@ -207,9 +206,8 @@
         </div>
     </div>
 
-  
+    <div class="blok-kontakty">
         <a name="kontakt">
-            <div class="blok">
             <h3>Kontakt</h3>
         </a>
         <h5>Wybierz najwygodniejszą dla siebie formę kontaktu!</h5>
@@ -306,15 +304,62 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn btn-outline-secondary kontakty">
+            <button type="button" class="btn btn-outline-secondary kontakty" data-bs-toggle="modal"
+                data-bs-target="#form-kontaktowy">
                 <h5>FORMULARZ KONTAKTOWY</h5>
-                <p>Napisz do nas wiadomość</p>
+                <p>Napisz do nas wiadomość</p></button>
+
+
+<!-- The Modal -->
+<div class="modal" id="form-kontaktowy">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      
+<div class="container mt-3">
+    <h2>Odpowiemy tak szybko, jak to będzie mozliwe</h2>
+    <form action="/action_page.php">
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
             </a>
             <button type="button" class="btn btn-outline-secondary kontakty" id="toastbtn">
                 <h5>INFOLINIA</h5>
                 <p>Zadzwoń do nas</p>
             </button>
-
+<!--             
             <div class="toast">
                 <div class="toast-header">
                     <strong class="me-auto">Zadzwoń pod ponizszy numer:</strong>
@@ -334,8 +379,7 @@
                     })
                     toastList.forEach(toast => toast.show())
                 }
-            </script>
-
+            </script> -->
 
 
         </div>
@@ -345,7 +389,7 @@
     </div>
     </div>
 
-
+</div>
 
 </body>
 
