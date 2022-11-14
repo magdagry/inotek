@@ -16,7 +16,6 @@
 
 <body>
 
-    </div>
     <nav class="navbar navbar-expand-sm bg-light">
         <div class="container-fluid">
 
@@ -31,14 +30,15 @@
                     <a class="nav-link" href="#kotwica">O NAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUKTY</a>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#katalog">PRODUKTY</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#kontakt">KONTAKT</a>
                 </li>
             </ul>
         </div>
-    </nav><br><br><br>
+    </nav><br><br><br><br>
+
     <div class="opis">
         <h1>Produkcja wyrobów ze stali nierdzewnej</h1>
     </div>
@@ -142,7 +142,7 @@
         </div>
     </div>
     <div class="onas">
-        <div class="blok">
+        <div class="blok blok-onas">
 
             <a name="kotwica">
                 <h3>O nas</h3>
@@ -206,7 +206,7 @@
         </div>
     </div>
 
-    <div class="blok-kontakty">
+    <div class="blok blok-kontakty">
         <a name="kontakt">
             <h3>Kontakt</h3>
         </a>
@@ -316,39 +316,58 @@
     <div class="modal-content">
 
       <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+      <div class="modal-header m-header">
+        <h4 class="modal-title m-title">Formularz kontaktowy</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
+      <div class="modal-body m-body">
       
 <div class="container mt-3">
-    <h2>Odpowiemy tak szybko, jak to będzie mozliwe</h2>
+    <h2 class="odp">Odpowiemy tak szybko, jak to będzie mozliwe</h2>
     <form action="/action_page.php">
       <div class="mb-3 mt-3">
+         <form>
+            <div class="row">
+              <div class="col">
+                <label for="text">Imię</label>
+                <input type="text" class="form-control" name="text">
+              </div>
+              <div class="col">
+                <label for="text">Nazwisko</label>
+                <input type="text" class="form-control" name="text">
+              </div>
+            </div>
+          </form>
         <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <input type="email" class="form-control" id="email" name="email">
       </div>
       <div class="mb-3">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        <label for="text">Kategoria</label>
+        <select class="form-control" id="text" placeholder="Wpisz" name="text">
+            <option></option>
+            <option>Oferta</option>
+            <option>Dostawa<option>
+            <option>Reklamacja</option>
+        </select>
       </div>
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="comment">Treść wiadomości</label>
+          <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        </div>
+      </form>
       <div class="form-check mb-3">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          <input class="form-check-input" type="checkbox" name="remember"> 
+          Potwierdzam zapoznanie się z polityką prywatności i przetwarzania danych przez firmę Inotek
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
     </form>
   </div>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
+</div>
 
     </div>
   </div>
@@ -359,14 +378,14 @@
                 <h5>INFOLINIA</h5>
                 <p>Zadzwoń do nas</p>
             </button>
-<!--             
+            
             <div class="toast">
                 <div class="toast-header">
                     <strong class="me-auto">Zadzwoń pod ponizszy numer:</strong>
                     <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                 </div>
                 <div class="toast-body">
-                    <p class="tel">tel: 665-765-123</p>
+                    <p class="tel">665-765-123</p>
                 </div>
             </div>
 
@@ -379,7 +398,7 @@
                     })
                     toastList.forEach(toast => toast.show())
                 }
-            </script> -->
+            </script>
 
 
         </div>
@@ -390,6 +409,297 @@
     </div>
 
 </div>
+  
+  <!-- The Modal -->
+  <div class="modal" id="katalog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header mo-header">
+          <h4 class="modal-title  mo-katalog">Katalog Produktów</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <p class="pkatalog">Stoły robocze</p> 
+            <div class="produkt">
+            <img src="img/stół roboczy.png" class="position-relative obraz-katalog">
+            <div class="container mt-3">
+                <p class="pkatalog pkatalog2">Wymiary</p>            
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>A[mm]</th>
+                      <th>h[mm]</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>400</td>
+                      <td rowspan="16">850</td>
+                    </tr>
+                    <tr>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>700</td>
+                      </tr>
+                      <tr>
+                        <td>800</td>
+                      </tr>
+                      <tr>
+                        <td>900</td>
+                      </tr>
+                      <tr>
+                        <td>1000</td>
+                      </tr>
+                      <tr>
+                        <td>1100</td>
+                      </tr>
+                      <tr>
+                        <td>1200</td>
+                      </tr>
+                      <tr>
+                        <td>1300</td>
+                      </tr>
+                      <tr>
+                        <td>1400</td>
+                      </tr>
+                      <tr>
+                        <td>1500</td>
+                      </tr>
+                      <tr>
+                        <td>1600</td>
+                      </tr>
+                      <tr>
+                        <td>1700</td>
+                      </tr>
+                      <tr>
+                        <td>1800</td>
+                      </tr>
+                      <tr>
+                        <td>1900</td>
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
+              </div>
+              <p class="pkatalog">Stoły ze zlewem</p> 
+              <div class="produkt">
+              <img src="img/stół ze zlewem" class="position-relative obraz-katalog">
+              <div class="container mt-3">
+                  <p class="pkatalog pkatalog2">Wymiary</p>            
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>A[mm]</th>
+                        <th>h[mm]</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>400</td>
+                        <td rowspan="16">850</td>
+                      </tr>
+                      <tr>
+                        <td>500</td>
+                      </tr>
+                      <tr>
+                        <td>600</td>
+                      </tr>
+                      <tr>
+                          <td>700</td>
+                        </tr>
+                        <tr>
+                          <td>800</td>
+                        </tr>
+                        <tr>
+                          <td>900</td>
+                        </tr>
+                        <tr>
+                          <td>1000</td>
+                        </tr>
+                        <tr>
+                          <td>1100</td>
+                        </tr>
+                        <tr>
+                          <td>1200</td>
+                        </tr>
+                        <tr>
+                          <td>1300</td>
+                        </tr>
+                        <tr>
+                          <td>1400</td>
+                        </tr>
+                        <tr>
+                          <td>1500</td>
+                        </tr>
+                        <tr>
+                          <td>1600</td>
+                        </tr>
+                        <tr>
+                          <td>1700</td>
+                        </tr>
+                        <tr>
+                          <td>1800</td>
+                        </tr>
+                        <tr>
+                          <td>1900</td>
+                        </tr>
+                    </tbody>
+                  </table>
+              </div>
+                </div>      <p class="pkatalog">Szafki wiszące</p> 
+                <div class="produkt">
+                <img src="img/szafka wisząca.jpeg" class="position-relative obraz-katalog">
+                <div class="container mt-3">
+                    <p class="pkatalog pkatalog2">Wymiary</p>            
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>A[mm]</th>
+                          <th>h[mm]</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>400</td>
+                          <td rowspan="16">600</td>
+                        </tr>
+                        <tr>
+                          <td>500</td>
+                        </tr>
+                        <tr>
+                          <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>700</td>
+                          </tr>
+                          <tr>
+                            <td>800</td>
+                          </tr>
+                          <tr>
+                            <td>900</td>
+                          </tr>
+                          <tr>
+                            <td>1000</td>
+                          </tr>
+                          <tr>
+                            <td>1100</td>
+                          </tr>
+                          <tr>
+                            <td>1200</td>
+                          </tr>
+                          <tr>
+                            <td>1300</td>
+                          </tr>
+                          <tr>
+                            <td>1400</td>
+                          </tr>
+                          <tr>
+                            <td>1500</td>
+                          </tr>
+                          <tr>
+                            <td>1600</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                </div>
+                  </div>      <p class="pkatalog">Szafy</p> 
+                  <div class="produkt">
+                  <img src="img/szafa" class="position-relative obraz-katalog">
+                  <div class="container mt-3">
+                      <p class="pkatalog pkatalog2">Wymiary</p>            
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>A[mm]</th>
+                            <th>h[mm]</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>800</td>
+                            <td rowspan="5">1800/2000</td>
+                          </tr>
+                          <tr>
+                            <td>900</td>
+                          </tr>
+                          <tr>
+                            <td>1000</td>
+                          </tr>
+                          <tr>
+                              <td>1100</td>
+                            </tr>
+                            <tr>
+                              <td>1200</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                    </div>      
+                    
+                    <!-- <p class="pkatalog">Półki wiszące</p> 
+                    <div class="produkt">
+                    <img src="img/polka-wiszaca-pojedyncza" class="position-relative obraz-katalog">
+                    <div class="container mt-3">
+                        <p class="pkatalog pkatalog2">Wymiary</p>            
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>A[mm]</th>
+                              <th>h[mm]</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>600</td>
+                              <td rowspan="16">600</td>
+                            </tr>
+                            <tr>
+                              <td>700</td>
+                            </tr>
+                            <tr>
+                              <td>800</td>
+                            </tr>
+                            <tr>
+                                <td>900</td>
+                              </tr>
+                              <tr>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>1100</td>
+                              </tr>
+                              <tr>
+                                <td>1200</td>
+                              </tr>
+                              <tr>
+                                <td>1300</td>
+                              </tr>
+                              <tr>
+                                <td>1400</td>
+                              </tr>
+                              <tr>
+                                <td>1500</td>
+                              </tr>
+                          </tbody>
+                        </table>
+                    </div> -->
+                      </div>     
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
 
 </body>
 

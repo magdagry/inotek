@@ -56,6 +56,7 @@ h3 {
     z-index: 1;
 }
 
+
 .pozycja {
     position: absolute!important;
     z-index: 1;
@@ -149,6 +150,7 @@ padding: 10!important
 p {
     font-family: Ayuthaya;
     font-size: 13px!important;
+    margin-top: -6px;
 }
 
 .kontener {
@@ -186,6 +188,7 @@ color: black;
 } */
 .tel {
     font-weight: bolder;
+    font-size: 30px!important;
 }
 .zaloguj {
     width: 100%;
@@ -244,10 +247,77 @@ text-align: -webkit-center;
     top: 20px!important;
 right: 15px!important;
 }
-.blok-kontakty {
-    width: 800px;
-    height: 0px;
-    position: relative;
-    margin: 250px;
-    margin-top: 250px;
+.blok-onas {
+    margin-top: 70px!important;
 }
+.blok-kontakty {
+  margin-bottom:150px!important;
+  margin-top: -70px!important;
+}
+.m-header {
+background-color: rgb(193, 191, 191);
+height: 80px;
+}
+.m-title {
+position: absolute;
+margin: 0px 250px;
+font-size: 25px;
+font-family: Apple SD Gothic Neo;
+}
+.odp {
+    font-weight: 350;
+    font-size: 25px;
+}
+
+.m-body {
+    background-color: rgb(226, 226, 226);
+}
+.toast {
+position: absolute;
+margin: -100px 600px;
+background-color: rgb(138, 138, 226);
+}
+
+.mo-katalog {
+    font-size: 2rem!important;
+    margin-left: 390px;
+    color: rgb(17, 17, 186); 
+}
+.obraz-katalog {
+    position: relative;
+    width: 504px;
+    height: 420px;
+    margin-left: 50px!important;
+}
+.produkt {
+    display:inline
+}
+.table-bordered {
+    width: 200px;
+    font-size: 13px;
+    position: relative;
+margin-left: 700px;
+}
+td {
+    padding: .1rem .1rem!important;
+    text-align: center;
+}
+.pkatalog {
+position: relative;
+font-family: Apple Color Emoji;
+font-size: 25px!important;
+margin-top: 50px;
+color: blue;
+margin-left: 200px;
+}
+.pkatalog2 {
+    position: relative;
+    font-family: Apple Color Emoji;
+    font-size: 25px!important;
+    margin-top: -490px;
+    color: blue;
+    margin-left: 740px!important;
+    }
+ .mo-header {
+    background-color: rgb(245, 245, 245);
+ }   
