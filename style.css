@@ -1,0 +1,69 @@
+.logo {
+    scale: 0.60;
+    margin-left: -70px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(238, 238, 238, 0.9) !important;
+    /* margin-top: -90px; */
+}
+
+/* .navbar-nav {
+    margin-left: 50%;
+   } */
+
+   .active {
+    color: #3752fa!important;
+}
+
+.nav-item {
+    font-weight: bolder;  
+}
+
+.nav-link {
+    color: rgb(17, 17, 17)
+}
+
+.nav-link:hover {
+    color: #3752fa!important;   
+}
+
+h1 {
+    position: relative;
+    margin-top: 75px;
+    font-family: Arial Rounded MT Bold;
+    color: #3752fa;
+    text-align: center;
+}
+
+
+.blok {
+    width: 800px;
+    height: 200px;
+    position: relative;
+    margin: 0px 250px;
+}
+
+h3 {
+    color: #3752fa;
+}
+
+.btn-outline-primary {
+    width: 350px;
+    height: 65px;
+    display: inline-block;
+    margin: 15px 20px;
+}
+
+.pos {
+    position: fixed!important;
+    z-index: 1;
+    display: inline!important;
+    left: 0px;
+    bottom: 0px;
+    height:400px!important;
+    width: 300px;
+}
