@@ -81,3 +81,15 @@ text-align: -webkit-center;
     box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
 
+.wd-icon {
+    width: 4rem;
+    height: auto;
+}
+
+#map {
+    height: 400px;
+}
+
+footer {
+    background-color: rgba(238, 238, 238, 0.9)
+}

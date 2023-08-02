@@ -33,16 +33,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Strona główna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O nas</a>
+                        <a class="nav-link" href="#about">O nas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produkty</a>
+                        <a class="nav-link" href="#products">Produkty</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Usługi</a>
+                        <a class="nav-link" href="#services">Usługi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -83,7 +83,7 @@
 
             </div>
 
-            <div class="mt-4 col-sm-12 col-md-12 col-lg-12 aboutus">
+            <div class="mt-4 col-sm-12 col-md-12 col-lg-12" id="about">
                 <h3>O nas</h3>
 
                 Inotek to urządzenia gastronomiczne i wyposażenie gastronomii
@@ -143,7 +143,7 @@
             </div>
 
 
-            <div class="mt-4 col-sm-12 col-md-12 col-lg-12 products">
+            <div class="mt-4 col-sm-12 col-md-12 col-lg-12" id="products">
 
                 <h3>Produkty</h3>
                 <p> Wszystkie produkty wykonywane są dostępne ze stali nierdzewnej lub stali nierdzewnej kwasoodpornej.
@@ -154,13 +154,13 @@
                     katalog</a>
             </div>
 
-            <div class="mt-4 col-sm-12 col-md-12 col-lg-12 services">
+            <div class="mt-4 col-sm-12 col-md-12 col-lg-12" id="services">
 
                 <h3>Usługi</h3>
                 <div class="row">
                     <div class="col-lg-4 service-box text-center mt-3">
-                        <div class="gradient">
-                            <img src="img/icons8-web-design-50.png" class="img-fluid mb-3 wd-icon" alt="web desing">
+                        <div class="">
+                            <img src="img/pc-display-horizontal.svg" class="img-fluid mb-3 wd-icon" alt="web desing">
                             <h3>Projektowanie</h3>
                             <p>Nasze zespoły projektowe, wykorzystując najnowocześniejsze technologie, tworzą
                                 przestrzenie kulinarnego mistrzostwa, gdzie efektywność, ergonomia i estetyka
@@ -169,8 +169,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 service-box text-center mt-3">
-                        <div class="gradient">
-                            <img src="img/coding.png" class="img-fluid mb-3 wd-icon" alt="web desing">
+                        <div class="">
+                            <img src="img/caret-left-fill.svg" class="img-fluid mb-3 wd-icon" alt="web desing">
                             <h3>Spawanie</h3>
                             <p>Nasze profesjonalne usługi spawania zapewniają solidne i trwałe połączenia metalowe dla
                                 różnorodnych branż. Dzięki zaawansowanemu sprzętowi i wykwalifikowanemu personelowi,
@@ -178,9 +178,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 service-box text-center mt-3">
-                        <div class="gradient">
+                        <div class="">
 
-                            <img src="img/maintenance.png" class="img-fluid mb-3 wd-icon" alt="web desing">
+                            <img src="img/file-earmark-check.svg" class="img-fluid mb-3 wd-icon" alt="web desing">
                             <h3>Szlifowanie</h3>
                             <p>
                                 Nasz doświadczony zespół korzysta z zaawansowanego sprzętu, dzięki czemu efektywnie
@@ -190,15 +190,110 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-4 col-sm-12 col-md-12 col-lg-12 contact">
+            <div class="mt-4 col-sm-12 col-md-12 col-lg-12 mb-5" id="contact">
                 <h3>Kontakt</h3>
+                <p>Skontaktuj się z nami przez formularz kotnaktowy!</p>
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-6 mt-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Imię i nazwisko</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Firma</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Adres email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Pytanie</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <!-- <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Zgoda</label>
+                                </div> -->
+                                <button type="submit" class="btn btn-outline-primary">Wyślij</button>
+                            </form>
+                        </div>
 
-
+                        <div class="col-lg-6 mt-4">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row gx-5 mt-4 text-center">
+                <div class="col-lg-4 mt-2">
+                    <p> Inotek s.c. <br> Grzępy 28 <br>
+                        64-700 Czarnków</p>
+                </div>
+                <div class="col-lg-4 mt-2">
+
+                    <p>tel: 605144900 <br> email: office@inotek.pl </p>
+                </div>
+                <div class="col-lg-4 mt-2">
+
+                    <p>NIP : 763-213-32-71 <br> REGON: 366334358 </p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        // Funkcja inicjalizująca mapę
+        function initMap() {
+            // Adres lub nazwa miejsca, które chcesz oznaczyć na mapie
+            var placeAddress = "Grzępy 28, Czarnków, Polska";
+
+            // Utwórz geokoder
+            var geocoder = new google.maps.Geocoder();
+
+            // Wykonaj geokodowanie na podstawie adresu lub nazwy miejsca
+            geocoder.geocode({ address: placeAddress }, function (results, status) {
+                if (status === google.maps.GeocoderStatus.OK) {
+                    // Pobierz współrzędne geograficzne z wyników geokodowania
+                    var placeLocation = results[0].geometry.location;
+
+                    // Utwórz mapę i umieść ją w elemencie o ID "map"
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: placeLocation,
+                        zoom: 12 // Poziom przybliżenia mapy (od 0 do 21)
+                    });
+
+                    // Dodaj znacznik na mapie w wybranej lokalizacji
+                    var marker = new google.maps.Marker({
+                        position: placeLocation,
+                        map: map,
+                        label: "" // Dodaj etykietę znacznika
+                    });
+                }
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmKV6sQVQkqjr5gg_2eCW-8BXfj4nJ3EU&callback=initMap"
+        async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
