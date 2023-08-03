@@ -100,10 +100,15 @@ footer {
 }
 
 .animate__slow2 {
-    animation-delay: 4s;
+    animation-delay: 0.5s;
+    shape-image-threshold: 0.8;
 }
 
-.text-footer {
+.animate__slow3 {
+    animation-delay: 1s;
+}
+
+.text-footer p {
     font-size: small!important;
 
 }
