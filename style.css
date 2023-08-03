@@ -49,6 +49,10 @@ h3 {
     color: #3752fa;
 }
 
+.margin-cat {
+    margin-left: 7rem
+}
+
 .bi {
     color: cornflowerblue;
 }
@@ -72,6 +76,12 @@ position: absolute;
 top: 138px;
 text-align: -webkit-center;
  }
+
+.rounded-start {
+ width: 50%;
+ height: auto;
+ margin-top: 1.5rem;
+ margin-left: 2.5rem; }
 
  .service-box {
     padding: 20px;
