@@ -68,6 +68,10 @@ h3 {
     width: 300px;
 }
 
+h5 {
+    color: #0e0e0e!important;
+}
+
 
 h6 {
     font-family: Al Tarikh;
@@ -77,9 +81,18 @@ top: 138px;
 text-align: -webkit-center;
  }
 
-.rounded-start {
- width: 50%;
- height: auto;
+.card {
+    width: 25rem;
+    height: 20rem;
+}
+
+.card .img {
+    filter: hue-rotate(240deg)!important;
+}
+
+
+.card .bi {
+font-size: 4rem;
  margin-top: 1.5rem;
  margin-left: 2.5rem; }
 
@@ -100,6 +113,7 @@ text-align: -webkit-center;
     width: 4rem;
     height: auto;
 }
+
 
 #map {
     height: 400px;
