@@ -1,6 +1,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
     color: gray;
+    font-size: 14px;
 }
 
 h3 {
@@ -81,11 +82,18 @@ top: 138px;
 text-align: -webkit-center;
  }
 
-.card {
+/* .card {
     width: 25rem;
     height: 20rem;
+} */
+
+.card:hover {
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
 }
 
+.card-text {
+    text-align: justify;
+}
 .card .img {
     filter: hue-rotate(240deg)!important;
 }
@@ -114,6 +122,11 @@ font-size: 4rem;
     height: auto;
 }
 
+
+.carousel {
+    width: 35rem;
+    height: 30rem;
+}
 
 #map {
     height: 400px;
