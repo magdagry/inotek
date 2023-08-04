@@ -149,3 +149,19 @@ footer {
     font-size: small!important;
 
 }
+
+.copyright-content {
+    border-top: 1px solid #d5d4e9;
+    padding: 15px 0;
+    margin: 45px 0 0px;
+}
+
+@keyframes heartbeat {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.heartbeat {
+    animation: heartbeat 2.5s infinite; 
+    }
