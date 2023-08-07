@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     color: gray;
     font-size: 14px;
+
 }
 
 h3 {
@@ -38,6 +39,33 @@ h3 {
     color: #3752fa!important;   
 }
 
+.container-fluid {
+    padding: 0;
+}
+
+.text1  {
+    position: absolute;
+    color: #1c2e9d;
+    font-weight: 600;
+    font-size: 5rem!important;
+    z-index: 2;
+    margin-top: -60rem;
+    margin-left: 5rem;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+    text-transform: uppercase;
+    opacity: 1;
+    transform: translateY(7em) ;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+    opacity .3s .5s ease-out;     
+    will-change: transform, opacity;
+    }
+    
+    .text1.is-visible {
+        opacity: 1;
+        transform: translateY(0em)
+    } 
+
+
 h1 {
     position: relative;
     margin-top: 75px;
@@ -46,6 +74,10 @@ h1 {
     text-align: center;
 }
 
+.bcg {
+position: relative;
+padding: 0px!important;
+}
 h3 {
     color: #3752fa;
 }
@@ -82,10 +114,154 @@ top: 138px;
 text-align: -webkit-center;
  }
 
-/* .card {
-    width: 25rem;
-    height: 20rem;
-} */
+.picture-anim1 {
+    opacity: 0;
+    transform: translateX(10em) ;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+    opacity .3s .5s ease-out;     
+    will-change: transform, opacity;
+}
+
+.picture-anim1.is-visible {
+    opacity: 1;
+    transform: translateX(0em)
+} 
+.picture-anim2 {
+    opacity: 0;
+    transform: translateX(10em) ;
+    transition: transform 4s .35s cubic-bezier(0,1,.3,1),
+    opacity .3s .5s ease-out;     
+    will-change: transform, opacity;
+}
+
+.picture-anim2.is-visible {
+    opacity: 1;
+    transform: translateX(0em)
+} 
+.picture-anim3 {
+    opacity: 0;
+    transform: translateX(10em) ;
+    transition: transform 4s .45s cubic-bezier(0,1,.3,1),
+    opacity .3s .5s ease-out;     
+    will-change: transform, opacity;
+}
+
+.picture-anim3.is-visible {
+    opacity: 1;
+    transform: translateX(0em)
+} 
+
+
+  
+.card1 {
+    opacity: 0;
+  -webkit-transform: translateY(0em) ;
+          transform: translateY(0em) ;
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .2s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+
+  will-change: transform, opacity;
+}
+
+.card1.is-visible {
+    opacity: 1;
+    transform: rotateZ('0deg');}
+
+.card2 {
+    opacity: 0;
+  -webkit-transform: translateY(0em) ;
+          transform: translateY(0em) ;
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .4s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+
+  will-change: transform, opacity;
+}
+
+.card2.is-visible {
+    opacity: 1;
+    transform: rotateZ('0deg');}
+
+  
+.card3 {
+    opacity: 0;
+  -webkit-transform: translateY(0em) ;
+          transform: translateY(0em) ;
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .6s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+
+  will-change: transform, opacity;
+}
+
+.card3.is-visible {
+    opacity: 1;
+    transform: rotateZ('0deg');}
+
+  
+.card4 {
+    opacity: 0;
+  -webkit-transform: translateY(0em) ;
+          transform: translateY(0em) ;
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .8s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+
+  will-change: transform, opacity;
+}
+
+.card4.is-visible {
+    opacity: 1;
+    transform: rotateZ('0deg');}
+
+.card5 {
+    opacity: 0;
+  -webkit-transform: translateY(0em) ;
+          transform: translateY(0em) ;
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .9s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+
+  will-change: transform, opacity;
+}
+
+.card5.is-visible {
+    opacity: 1;
+    transform: rotateZ('0deg');}
+
+  
+
 
 .card:hover {
     box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
@@ -129,7 +305,7 @@ font-size: 4rem;
 }
 
 #map {
-    height: 400px;
+    height: 200px;
 }
 
 footer {
